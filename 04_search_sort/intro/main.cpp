@@ -3,6 +3,7 @@
 
 int main()
 {
+    unsigned int start_time =  clock();
     int arr[] = {-996, -960, -944, -887, -865, -860, -846, -831, -790, -785, -700, -691, -662, -662, -647, 
     -640, -587, -532, -524, -519, -501, -497, -475, -471, -461, -457, -452, -442, -441, -416, 
     -412, -411, -390, -389, -358, -341, -306, -257, -253, -252, -248, -208, -143, -134, -82, 
@@ -12,6 +13,9 @@ int main()
     const int arr_size = sizeof(arr) / sizeof(arr[0]);
     int x = 120;
     int result = binary_search(arr, arr_size, x); 
+    unsigned int end_time = clock();
+    unsigned int search_time = end_time - start_time;
+    std::cout << search_time  << std::endl;
     std::cout << result << std::endl;
     return 0;
 } 
