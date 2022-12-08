@@ -1,4 +1,3 @@
-// complex.cpp
  #include <iostream>
 
  double power_n (double d, unsigned n)
