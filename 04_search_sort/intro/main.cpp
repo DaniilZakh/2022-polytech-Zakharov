@@ -1,5 +1,6 @@
 #include <iostream>
 #include "functions.h"
+using namespace std;
 
 int main()
 {
@@ -12,10 +13,10 @@ int main()
     740, 766, 780, 782, 794, 802, 829, 832, 837, 858, 875, 881, 882, 883, 883, 947, 959};
     const int arr_size = sizeof(arr) / sizeof(arr[0]);
     int x = 120;
-    int result = binary_search(arr, arr_size, x); 
+    int result = linear_search(arr, arr_size, x); 
     unsigned int end_time = clock();
     unsigned int search_time = end_time - start_time;
-    std::cout << search_time  << std::endl;
-    std::cout << result << std::endl;
+    cout <<"время поиска -" << search_time << "\n" ;
+    cout <<"позиция в массиве - "<< result ;
     return 0;
 } 
