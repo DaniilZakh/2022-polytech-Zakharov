@@ -11,7 +11,7 @@ int main()
     std::cout << n << std::endl;
     for(int i = 0; i < n; i++)
     {
-        std::cout << result[i] << " ";
+        std::cout << result[i] + 1 << " ";
     }
     return 0;
 } 
